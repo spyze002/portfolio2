@@ -1,5 +1,5 @@
 import { Typography, Box } from "@mui/material";
-import LogoReact from '../Images/react.jpeg';
+import LogoReact from '../Images/esum1.jpeg';
 
 function Content() {
   return (
@@ -14,22 +14,44 @@ function Content() {
    sx={{
     display: 'flex',
     backgroundColor: '#315BAB',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     width: '1280px',
     height: 500,
-    mt: 6
+    mt: 6,
+
 
    }}>
+ 
     <Box
     component='img'
     src ={LogoReact}
     sx={{
       display: 'flex',
-      width: 500,
-      height: 300,
-    }}
-    >
+      width: 400,
+      height: 500,
+      opacity: 0.9,
+      borderRadius: 10
 
+    }}
+   / >
+    <Box
+    component={'nav'}
+    sx={{
+      display: 'flex',
+      fontSize: 80,
+      color: '#fff',
+      fontWeight: 'bold',
+
+    }}
+    
+
+    >
+      REACT FRONTEND DEVELOPER
     </Box>
+
+
+
 
    </Box>
 
