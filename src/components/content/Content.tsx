@@ -1,5 +1,6 @@
 import { Typography, Box } from "@mui/material";
-import LogoReact from '../Images/esum1.jpeg';
+import firstlogo from '../Images/background.png';
+import SecondScreen from '../Images/esum2.png'
 
 function Content() {
   return (
@@ -10,50 +11,41 @@ function Content() {
     backgroundColor: '#0B021C'
    }}>
     
-      <Box
+   <Box
+   
+   component = 'img'
+   src= {firstlogo}
    sx={{
     display: 'flex',
-    backgroundColor: '#315BAB',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: '1280px',
-    height: 500,
-    mt: 6,
+    width: '100%',
+    height: 600,
+    opacity: 0.7
 
-
+   }}
+   />
+      <Box
+   
+   sx= {{
+    display: 'flex',
+    width: '100%',
+    height: 20,
+    backgroundColor: '#000000'
    }}>
- 
-    <Box
-    component='img'
-    src ={LogoReact}
-    sx={{
-      display: 'flex',
-      width: 400,
-      height: 500,
-      opacity: 0.9,
-      borderRadius: 10
-
-    }}
-   / >
-    <Box
-    component={'nav'}
-    sx={{
-      display: 'flex',
-      fontSize: 80,
-      color: '#fff',
-      fontWeight: 'bold',
-
-    }}
-    
-
-    >
-      REACT FRONTEND DEVELOPER
-    </Box>
-
-
-
-
    </Box>
+
+   <Box
+    component = 'img'
+    src= {SecondScreen}
+    sx={{
+     display: 'flex',
+     width: '100%',
+     height: 700,
+     opacity: 0.7
+ 
+    }}
+   />
+
+
 
    </Box>
    
